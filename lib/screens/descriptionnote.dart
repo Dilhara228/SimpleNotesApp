@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class DescriptionNote extends StatefulWidget {
   final String tittle;
   final String description;
-  final Color color; // Add color to the constructor
+  final Color color;
 
   DescriptionNote({
     required this.tittle,
     required this.description,
-    required this.color, // Initialize color
+    required this.color,
   });
 
   @override
@@ -22,12 +22,12 @@ class _DescriptionNoteState extends State<DescriptionNote> {
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
         title: const Text('Note Description',
-            style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.black87),
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.black87),
         ),
-    ),
-      backgroundColor: Colors.lightBlue[50], // Light blue background for the page
+      ),
+      backgroundColor: Colors.lightBlue[50],
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
@@ -37,7 +37,7 @@ class _DescriptionNoteState extends State<DescriptionNote> {
                 itemCount: 1,
                 itemBuilder: (context, index) {
                   return Card(
-                    color: widget.color, // Apply the passed color to the note card
+                    color: widget.color,
                     child: ListTile(
                       title: Text(widget.tittle),
                       subtitle: Text(widget.description),

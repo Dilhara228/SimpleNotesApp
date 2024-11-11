@@ -15,28 +15,27 @@ class SplashScreen extends StatelessWidget {
           children: [
             Center(
               child: Lottie.asset(
-                'assets/animation/Animation - 1729701521983.json', // Path to your Lottie file
-                width: 200, // Adjust width as needed
-                height: 200, // Adjust height as needed
+                'assets/animation/Animation - 1729701521983.json',
+                width: 200,
+                height: 200,
               ),
             ),
-            const SizedBox(height: 16), // Space between animation and text
+            SizedBox(height: 1),
             const Text(
               'My Simple Notes',
               style: TextStyle(
                 color: Colors.black87,
-                fontSize: 24,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
-
               ),
             ),
           ],
         ),
       ),
       nextScreen: const NoteHomeUI(),
-      splashIconSize: 250,
+      splashIconSize: 500,
       duration: 4000,
-      backgroundColor: Colors.blueAccent, // Background color
+      backgroundColor: Colors.blueAccent,
     );
   }
 }
